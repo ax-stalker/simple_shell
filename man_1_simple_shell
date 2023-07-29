@@ -1,0 +1,35 @@
+.TH simple_shell 1 "16 Nov 2022" "0.1" "Simple Shell User Manual"
+
+.SH NAME
+simple_shell - A simple Unix shell implemented in C to interact with a Linux operating system.
+
+.SH SYNOPSIS
+.B simple_shell
+[options] [file]
+
+.SH DESCRIPTION
+The simple_shell is a command-line program that reads lines from either a file or the terminal, interprets them, and executes other commands. It serves as an interactive user interface with the operating system, allowing users to interact with the system through commands. The shell is the program that is executed when a user logs into the system. It is also capable of executing shell scripts, allowing users to automate sequences of commands stored in files.
+
+.B Overview
+The simple shell provides a command-line interface that accepts commands and executes them. It supports interactive use, where users can type commands directly to the running shell, and non-interactive use, where commands are stored in a file and executed directly by the shell.
+
+.SH RETURN VALUE
+The simple shell returns an exit status to indicate the success or failure of a command execution. An exit status of 0 usually indicates success, while non-zero values typically represent failure or specific error conditions.
+
+.SH PATH
+When executing a command, the simple shell searches for the executable in the directories listed in the PATH environment variable. If the command is found in any of the directories, it is executed.
+
+.SH OPTIONS
+The simple shell does not have any command-specific options. However, it supports the standard command-line options and arguments that are common to most shell programs.
+
+.SH EXAMPLES
+To list the contents of the current directory using the simple shell:
+
+.B simple_shell
+$ ls -l
+
+.SH BUGS
+Commands entered in the simple shell must be separated by at least one space character.
+
+.SH AUTHORS
+The simple shell was created by Maxwell Mwangi.
